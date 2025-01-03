@@ -1,0 +1,56 @@
+@use "../abstracts/variables" as var;
+
+header {
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 1.5),
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("../images/banner.png");
+    background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .row {
+    color: white;
+    .logo {
+      img {
+        height: 40px;
+      }
+    }
+
+    h1 {
+      margin: 20px 0 20px 0;
+    }
+    p {
+      width: 40%;
+    }
+
+
+    .header-btn {
+      height: 50px;
+      padding: 15px 30px;
+      margin: 20px 0;
+      font-size: var.$font-size-middle;
+      background-color: var.$background-color-btn;
+      border: none;
+      border-radius: 10px 0 10px 0;
+      color: white;
+      transition: 0.5s ease-out;
+    }
+
+    .header-span {
+      i {
+        color: #0072ba;
+      }
+    }
+    .header-btn:hover {
+      background-color: #0072ba;
+      color: black;
+      padding: 10px 30px;
+      height: 60px;
+    }
+  }
+}

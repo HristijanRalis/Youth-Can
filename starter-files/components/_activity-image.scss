@@ -1,0 +1,27 @@
+@use "../abstracts/variables" as var;
+
+.activities {
+  padding-block: 40px;
+  object-fit: fill;
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  .header-btn {
+    padding: 15px 30px;
+    font-size: var.$font-size-middle;
+    background-color: var.$background-color-btn;
+    border: none;
+    border-radius: 10px 0 10px 0;
+    color: white;
+    transition: 0.5s ease-out;
+  }
+
+  .header-btn:hover {
+    background-color: #0072ba;
+    color: black;
+    padding: 20px 35px;
+  }
+}

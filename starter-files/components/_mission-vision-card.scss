@@ -1,0 +1,26 @@
+@use "../abstracts/variables" as var;
+
+.mission-vision {
+  padding-block: 40px;
+  .card-1 {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+    height: auto;
+    border-radius: 10px;
+    height: 100%;
+  }
+
+  .card-2 {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+    background-color: var.$background-color-card-2;
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  .mission-vision-card {
+    text-align: center;
+    padding: 20px;
+  }
+  i {
+    color: var.$background-color-btn;
+  }
+}
