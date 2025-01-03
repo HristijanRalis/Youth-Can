@@ -1,0 +1,19 @@
+@use "../abstracts/variables" as var;
+@use "sass:math";
+.our-team {
+  h2 {
+    font-size: calc(var.$font-size-heading-big * 2);
+  }
+
+  .person-info {
+    p {
+      font-size: calc(var.$font-size-small / 2);
+    }
+
+    img{
+      height: 150px;
+       width: 150px;
+       border-radius: 50%;
+    }
+  }
+}
