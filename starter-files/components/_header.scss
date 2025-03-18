@@ -8,7 +8,7 @@ header {
       rgba(0, 0, 0, 0.6)
     ),
     url("../images/banner.png");
-    background-attachment: fixed;
+  background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -28,17 +28,16 @@ header {
       width: 40%;
     }
 
-
     .header-btn {
       height: 50px;
       padding: 15px 30px;
       margin: 20px 0;
-      font-size: var.$font-size-middle;
-      background-color: var.$background-color-btn;
+      font-size: var($font-size-middle);
+      background-color: var($background-color-btn);
       border: none;
       border-radius: 10px 0 10px 0;
       color: white;
-      transition: 0.5s ease-out;
+      transition: transform 0.5s ease-out, background-color 0.5s ease-out;
     }
 
     .header-span {
@@ -47,10 +46,8 @@ header {
       }
     }
     .header-btn:hover {
-      background-color: #0072ba;
-      color: black;
-      padding: 10px 30px;
-      height: 60px;
+      background-color: #00ba2e;
+      transform: scale(1.1);
     }
   }
 }
